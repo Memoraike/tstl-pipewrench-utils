@@ -1,6 +1,13 @@
 import * as tstl from 'typescript-to-lua';
 import * as ts from 'typescript';
 
+declare global {
+  function instanceOf<T extends object, Type extends abstract new (...args: never) => InstanceType<Type>>(
+    target: T,
+    type: Type
+  ): target is T & InstanceType<Type>;
+}
+
 function fixInstanceOf(code: string): string {
   if (code.length === 0) return '';
 

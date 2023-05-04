@@ -1,6 +1,6 @@
 {
   "name": "@memoraike/tstl-pipewrench-utils",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "license": "MIT",
   "main": "./dist/index.js",
   "dependencies": {
@@ -15,11 +15,10 @@
   },
   "files": [
     "dist/index.js",
-    "dist/index.d.ts",
     "dist/index.d.ts"
   ],
   "exports": "./dist/index.js",
-  "types": "./dist/types.d.ts",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/node": "^18.7.15",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
